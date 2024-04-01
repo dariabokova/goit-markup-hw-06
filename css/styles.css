@@ -3,12 +3,50 @@ body {
     background: #fff;
     color: #434455
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-ul{
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+ul {
     list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-container {
+    display: flex;
 }
 
 .header-logo {
@@ -23,6 +61,12 @@ ul{
 
 .header-logo-color {
     color: #2e2f42;
+}
+
+.header-menu {
+    display: flex;
+    gap: 40px;
+    margin-right: 332px;
 }
 
 .header-menu-item:hover {
@@ -47,6 +91,11 @@ ul{
     font-style: normal;
 }
 
+.address-menu {
+    display: flex;
+    gap: 40px;
+}
+
 .address-item-link {
     font-size: 16px;
     line-height: 1.5;
@@ -55,13 +104,14 @@ ul{
 }
 
 .address-item-link:hover,
-.address-item-link:focus,{
+.address-item-link:focus {
     color: #404bbf;
 }
 
-.hero{
+.hero {
     background-color: #2e2f42;
 }
+
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
@@ -69,6 +119,14 @@ ul{
     text-align: center;
     color: #fff;
     background-color: #2e2f42;
+    width: 496px;
+    margin: 0 auto;
+
+}
+
+.button-container {
+    padding: 188px 0px;
+    margin-top: 17px;
 }
 
 .hero-btn {
@@ -79,6 +137,12 @@ ul{
     color: #fff;
     cursor: pointer;
     background: #4d5ae5;
+    display: block;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin: 0 auto;
+    border: none;
+    margin-top: 48px;
 }
 
 .hero-btn:focus,
@@ -86,6 +150,24 @@ ul{
     background-color: #404bbf;
 }
 
+/* Info */
+
+.information {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.info-list {
+    padding-right: 156px;
+    padding-left: 156px;
+    display: flex;
+    gap: 24px;
+}
+
+.info-list-item {
+    width: calc((100% - 3 * 24px) / 4);
+
+}
 
 .info-item-title {
     font-weight: 500;
@@ -100,10 +182,18 @@ ul{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-top: 8px;
 }
+
+/* Team */
 
 .team {
     background: #f4f4fd;
+}
+
+.img-member,
+portfolio-item-img {
+    display: block;
 }
 
 .team-title {
@@ -113,10 +203,29 @@ ul{
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+    padding-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
 }
 
 .team-list-item {
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    width: calc((100% - 3 * 24px) / 4);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+
+}
+
+.team-list-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.member-info {
+    padding: 32px 16px;
 }
 
 .team-member-name {
@@ -126,6 +235,7 @@ ul{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    padding-bottom: 8px;
 
 }
 
@@ -138,6 +248,23 @@ ul{
     color: #434455;
 }
 
+/* Portfolio */
+
+.portfolio-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.portfolio-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.portfolio-list-item {
+    width: calc((100% - 2 * 24px) / 3);
+}
+
 .portfolio-title {
     font-size: 36px;
     line-height: 1.11;
@@ -145,6 +272,13 @@ ul{
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
+    padding-bottom: 72px;
+}
+
+.box {
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
 }
 
 .portfolio-name {
@@ -153,6 +287,8 @@ ul{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-top: 32px;
+    padding-left: 16px;
 }
 
 .portfolio-dscr {
@@ -160,11 +296,28 @@ ul{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 32px;
 
 }
 
+/* Footer */
+
 .footer {
     background-color: #2e2f42;
+}
+
+.footer-wrap {
+    width: 1440px;
+    height: 312px;
+}
+
+.footer-wrap-text {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 1020px;
+    padding-left: 156px;
 }
 
 .footer-link {
@@ -174,6 +327,7 @@ ul{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+
 }
 
 .footer-logo-color {
@@ -190,4 +344,5 @@ ul{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    padding-top: 16px;
 }
