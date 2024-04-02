@@ -183,6 +183,8 @@ ul {
     padding-left: 156px;
     display: flex;
     gap: 24px;
+    padding-left: 0;
+    margin: 0;
 }
 
 .info-list-item {
@@ -251,7 +253,6 @@ portfolio-item-img {
 }
 
 .member-info {
-    /* padding: 32px 16px; */
     padding: 32px 0;
 }
 
@@ -287,12 +288,6 @@ portfolio-item-img {
     column-gap: 24px;
     row-gap: 48px;
 }
-
-/* .portfolio-list-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 48px 24px;
-} */
 
 .portfolio-container {
     padding-top: 120px;
