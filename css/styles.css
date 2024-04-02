@@ -179,8 +179,6 @@ ul {
 }
 
 .info-list {
-    padding-right: 156px;
-    padding-left: 156px;
     display: flex;
     gap: 24px;
     margin: 0;
