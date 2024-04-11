@@ -332,13 +332,9 @@ portfolio-item-img {
 }
 
 .icon-link:hover,
-.icon-link:hover:focus {
+.icon-link:focus {
     background-color: #404bbf;
 }
-
-.icon-icon {}
-
-
 
 /* Portfolio */
 .portfolio {
