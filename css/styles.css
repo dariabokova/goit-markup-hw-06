@@ -682,6 +682,10 @@ portfolio-item-img {
     margin-bottom: 24px;
 }
 
+.modal-field-name {
+    margin-bottom: 8px;
+}
+
 .modal-field-text {
     margin-bottom: 16px;
 }
