@@ -678,7 +678,8 @@ portfolio-item-img {
 }
 
 .modal-field {
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
+    margin-bottom: 24px;
 }
 
 .modal-field-text {
@@ -754,7 +755,7 @@ portfolio-item-img {
 }
 
 .modal-check:checked+.check-text>.check-text-icon {
-    background-color: #4d5ae5;
+    background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
 }
