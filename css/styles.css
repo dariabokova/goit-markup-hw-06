@@ -678,13 +678,10 @@ portfolio-item-img {
 }
 
 .modal-field {
-    /* margin-bottom: 8px; */
+    margin-bottom: 8px;
     margin-bottom: 24px;
 }
 
-.modal-field-name {
-    margin-bottom: 8px;
-}
 
 .modal-field-text {
     margin-bottom: 16px;
