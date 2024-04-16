@@ -680,6 +680,7 @@ portfolio-item-img {
 .modal-field {
     margin: 24px;
     margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .modal-label {
@@ -740,7 +741,6 @@ portfolio-item-img {
 
 .check-text-icon {
     margin-right: 8px;
-    display: inline-flex;
     width: 16px;
     height: 16px;
     border-radius: 2px;
@@ -749,7 +749,7 @@ portfolio-item-img {
     align-items: center;
     justify-content: center;
     fill: transparent;
-    ;
+    display: inline-flex;
 }
 
 .modal-check:checked+.check-text>.check-text-icon {
