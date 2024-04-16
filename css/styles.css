@@ -679,7 +679,7 @@ portfolio-item-img {
 
 .modal-field {
     margin: 24px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .modal-label {
@@ -688,7 +688,7 @@ portfolio-item-img {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
@@ -719,6 +719,10 @@ portfolio-item-img {
 
 }
 
+.modal-check {
+    margin-bottom: 24px;
+}
+
 .modal-text:focus {
     border-color: #4d5ae5;
 }
@@ -735,8 +739,8 @@ portfolio-item-img {
 }
 
 .check-text-icon {
-    display: inline-flex;
     margin-right: 8px;
+    display: inline-flex;
     width: 16px;
     height: 16px;
     border-radius: 2px;
@@ -745,6 +749,7 @@ portfolio-item-img {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    ;
 }
 
 .modal-check:checked+.check-text>.check-text-icon {
