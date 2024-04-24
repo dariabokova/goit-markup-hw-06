@@ -26,9 +26,15 @@ ul {
 }
 
 .container {
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
+    /* width: 320px;
+    /* max-width: 1166px; */
+    /* padding: 0 15px;
+    margin: 0 auto; */
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section {
@@ -213,27 +219,36 @@ ul {
 }
 
 .information {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
 .info-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    /* gap: 24px; */
+    gap: 72px;
     margin: 0;
 }
 
 .info-list-item {
-    width: calc((100% - 3 * 24px) / 4);
+    /* width: calc((100% - 3 * 24px) / 4); */
+    width: 100%;
 }
 
 .info-item-title {
-    font-weight: 500;
-    font-size: 20px;
+    /* font-weight: 500;
+    font-size: 20px; */
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 36px;
+    /* text-align: center; */
+
 }
 
 .info-item-text {
@@ -241,6 +256,8 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    font-weight: 500;
+
 }
 
 /* Team */
@@ -808,4 +825,45 @@ portfolio-item-img {
 .modal-btn:hover,
 .modal-btn:focus {
     background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        min-width: 768px;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .information {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .info-list {
+        gap: 72px 24px;
+
+    }
+
+    .info-list-item {
+        width: calc((100% - 72px) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .info-list {
+        gap: 72px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+    }
+
+    .info-list-item {
+        width: calc((100% - 3 * 24px) / 4);
+    }
 }
